@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <v-index></v-index>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
+  import index from './components/index/index'
+
+  export default {
+    components: {
+      'v-index': index
+    }
 }
 </script>
 
@@ -18,6 +21,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
 }
 </style>

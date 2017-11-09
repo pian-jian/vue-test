@@ -1,0 +1,115 @@
+html {
+   font-size : 20px;
+ }
+body{
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 401px){
+  html {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (min-width: 428px){
+  html {
+    font-size: 26.75px !important;
+  }
+}
+@media only screen and (min-width: 481px){
+  html {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 569px){
+  html {
+    font-size: 35px !important;
+  }
+}
+@media only screen and (min-width: 641px){
+  html {
+    font-size: 40px !important;
+  }
+}
+$lightgreen-color: rgb(83,189,80) !global;
+$midgreen-color:rgb(34, 172, 56)!global;
+$darkgreen-color: rgb(9,95,16) !global;
+$bglightgrey-color: rgb(247, 247, 247) !global;
+$lightgrey-color: rgb(181, 181, 182) !global;
+$midgrey-color: rgb(137, 137, 137) !global;
+$darkgrey-color: rgb(50, 50, 50) !global;
+$darkred-color: rgb(2023, 36, 28) !global;
+$lightred-color: rgb(232, 56, 40) !global;
+$lightorange-color: rgb(250, 153, 65) !global;
+$darorange-color: rgb(199, 103, 25) !global;
+
+$smallicon-width: 25px !global;
+$borderbottom: 1px solid $lightgrey-color !global;
+$borderdashed_bottom: 1px dashed $lightgrey-color !global;
+$h-fontweight: 100 !global;
+$bigicon-width: 45px !global;
+$midicon-width: 30px !global;
+$icon-triple: "@3x.png" !global;
+@mixin margin0-padding0 {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin bgimgset {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+@mixin bgimgsizemid {
+  background-size: $midicon-width;
+  -moz-background-size: $midicon-width;
+}
+
+@mixin textoverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@mixin text2coloverflow {
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+@mixin div_v_center {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin div_h_center {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin mine_menu {
+  background-size: 40px;
+  background-position: 10px 50%;
+  background-repeat: no-repeat;
+}
+
+@mixin iconmidbg {
+  background-size: $midicon-width;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin btncursor {
+  cursor: pointer;
+}
+.f10{
+  font-size: 10px;
+}
+.white{
+  color:white;
+}
+
