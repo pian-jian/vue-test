@@ -1,16 +1,19 @@
 <template>
   <div>
     <IndexBanner></IndexBanner>
-    <indexTypes></indexTypes>
+    <IndexTypes></IndexTypes>
+    <IndexSwiper></IndexSwiper>
   </div>
 </template>
 <script>
   import indexbanner from './banner'
   import indextypes from './types'
+  import indexswiper from './../swiper/swiper'
   export default {
     components: {
       'IndexBanner': indexbanner,
-      'indexTypes': indextypes
+      'IndexTypes': indextypes,
+      'IndexSwiper': indexswiper
     }
   }
 </script>

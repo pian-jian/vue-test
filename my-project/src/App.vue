@@ -5,13 +5,6 @@
 </template>
 
 <script>
-  import index from './components/index/index'
-
-  export default {
-    components: {
-      'v-index': index
-    }
-}
 </script>
 
 <style>

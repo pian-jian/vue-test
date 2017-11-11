@@ -120,4 +120,13 @@ $icon-triple: "@3x.png" !global;
   background-size: contain;
   background-position: center;
 }
+.hr{
+  background: #f3f3f3;
+  border-top: 1px solid #e3e3e3;
+  height: 1rem;
+  width:auto;
+}
+.hr-one{
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
 
