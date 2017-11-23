@@ -8,18 +8,6 @@
       <swiper-slide>
         <img src="../../assets/imgs/home_banner2.jpg"/>
       </swiper-slide>
-      <swiper-slide>
-        <img src="../../assets/imgs/home_banner1.jpg"/>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../../assets/imgs/home_banner2.jpg"/>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../../assets/imgs/home_banner1.jpg"/>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../../assets/imgs/home_banner2.jpg"/>
-      </swiper-slide>
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
       <div class="swiper-button-prev" slot="button-prev"></div>
@@ -40,7 +28,7 @@
         notNextTick: true,
         swiperOption: {
           // swiper options 所有的配置同swiper官方api配置
-          autoplay: 3000,
+          autoplay: 30000,
          //  direction: 'vertical',
           grabCursor: true,
           setWrapperSize: true,
@@ -48,20 +36,22 @@
           autoHeight: true,
           pagination: '.swiper-pagination',
           paginationClickable: true,
-          prevButton: '.swiper-button-prev',
-          nextButton: '.swiper-button-next',
-          scrollbar: '.swiper-scrollbar',
+          // prevButton: 'none',
+          // nextButton: 'none',
+          // prevButton: '.swiper-button-prev',
+          // nextButton: '.swiper-button-next',
+          // scrollbar: '.swiper-scrollbar',
           mousewheelControl: true,
           autoplayDisableOnInteraction: false,
           observeParents: true,
           loop: true,
           // if you need use plugins in the swiper, you can config in here like this
           // 如果自行设计了插件，那么插件的一些配置相关参数，也应该出现在这个对象中，如下debugger
-          debugger: true,
+          debugger: false,
           // swiper callbacks
           // swiper的各种回调函数也可以出现在这个对象中，和swiper官方一样
           onTransitionStart (swiper) {
-            console.log(swiper)
+            // console.log(swiper)
           }
           // more Swiper configs and callbacks...
           // ...
@@ -90,26 +80,13 @@
       width: 100%;
     }
    }
-
-
-  .swiper-item {
-    height: 100%;
-    text-align: center;
-    font-size: 18px ;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+  .swiper-button-prev{
+    background: none;
   }
-
+  .swiper-button-next{
+    background: none;
+  }
+  .swiper-scrollbar{
+    display: none;
+  }
 </style>

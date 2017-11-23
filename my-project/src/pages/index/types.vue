@@ -44,8 +44,8 @@
 
   }
 </script>
-<style lang="scss" rel="stylesheet/scss">
-  @import "../../style/global.scss";
+<style lang="scss" rel="stylesheet/scss" scoped>
+  @import "../../style/global";
   .index-types{
     width: 100%;
     height: 16rem;
