@@ -15,10 +15,10 @@
     </div>
     <div class="index-types">
       <div class="bgs-list row">
-        <div class="w-25">
-          <i class="bgs menu-1"></i>
-          <p>二手房</p>
-        </div>
+        <router-link  class="w-25" to="/oldhouselist">
+            <i class="bgs menu-1"></i>
+            <p>二手房</p>
+        </router-link>
         <div class="w-25">
           <i class="bgs menu-2"></i>
           <p>新房</p>
@@ -53,6 +53,7 @@
       <div class="hr"></div>
     </div>
     <IndexSwiper></IndexSwiper>
+
     <div class="index-helps">
       <div class="hr"></div>
       <div class="bgs-list row">
@@ -89,6 +90,10 @@
       </div>
       <div class="hr"></div>
     </div>
+    <div class="section group-li flex-ll fsize16">
+      热门房源
+    </div>
+    <div class="hr-one"></div>
     <Esflist></Esflist>
 
   </div>
@@ -98,6 +103,7 @@
   import esflist from './../../components/houselist/esfitem'
 
   export default {
+
     components: {
       'IndexSwiper': indexswiper,
       'Esflist': esflist

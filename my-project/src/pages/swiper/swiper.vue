@@ -1,26 +1,15 @@
 <template>
   <div class="index-swiper">
-    <swiper :options="swiperOption" :not-next-tick="notNextTick" ref="mySwiper">
-      <!-- slides -->
-      <swiper-slide>
-        <img src="../../assets/imgs/home_banner1.jpg"/>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../../assets/imgs/home_banner2.jpg"/>
-      </swiper-slide>
-      <!-- Optional controls -->
-      <div class="swiper-pagination"  slot="pagination"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
-      <div class="swiper-scrollbar"   slot="scrollbar"></div>
-    </swiper>
+    <mt-swipe  :auto="4000">
+      <mt-swipe-item><img src="../../assets/imgs/home_banner1.jpg"/></mt-swipe-item>
+      <mt-swipe-item><img src="../../assets/imgs/home_banner2.jpg"/></mt-swipe-item>
+    </mt-swipe>
   </div>
 </template>
 
 <script>
   // swiper options example:
   export default {
-    name: 'carrousel',
     data () {
       return {
         // NotNextTick is a component's own property, and if notNextTick is set to true, the component will not instantiate the swiper through NextTick, which means you can get the swiper object the first time (if you need to use the get swiper object to do what Things, then this property must be true)
@@ -58,25 +47,18 @@
         }
       }
     },
-    // you can find current swiper instance object like this, while the notNextTick property value must be true
-    // 如果你需要得到当前的swiper对象来做一些事情，你可以像下面这样定义一个方法属性来获取当前的swiper对象，同时notNextTick必须为true
-    computed: {
-      swiper () {
-        return this.$refs.mySwiper.swiper
+    methods: {
+      handleChange (index) {
+
       }
-    },
-    mounted () {
-      // you can use current swiper instance object to do something(swiper methods)
-      // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-      // console.log('this is current swiper instance object', this.swiper)
-      // this.swiper.slideTo(0, 1000, false)
     }
   }
 </script>
 
 <style lang="scss">
   .index-swiper{
-     .swiper-container .swiper-wrapper .swiper-slide img{
+    height: 100px;
+    img{
       width: 100%;
     }
    }

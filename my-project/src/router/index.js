@@ -5,6 +5,7 @@ import CitySelect from '@/components/cityselect/cityselect'
 import Service from '@/pages/service/service'
 import SeeHouse from '@/pages/seehouse/seehouse'
 import Me from '@/pages/me/me'
+import Oldhouselist from '@/pages/oldhouse/list'
 
 Vue.use(Router)
 
@@ -28,5 +29,8 @@ export default new Router({
     }, {
       path: '/me',
       component: Me
+    }, {
+      path: '/oldhouselist',
+      component: Oldhouselist
     }]
 })

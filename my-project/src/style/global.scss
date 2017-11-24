@@ -5,6 +5,13 @@ body{
   margin: 0;
   padding: 0;
 }
+ul{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type:none;
+}
 @media only screen and (min-width: 401px){
   html {
     font-size: 14px !important;
@@ -31,7 +38,7 @@ body{
   }
 }
 
-$blue:#1273e1 !global;
+$blue: #1273e1 !global;
 $lightgreen-color: rgb(83,189,80) !global;
 $midgreen-color:rgb(34, 172, 56)!global;
 $darkgreen-color: rgb(9,95,16) !global;
@@ -50,7 +57,6 @@ $borderdashed_bottom: 1px dashed $lightgrey-color !global;
 $h-fontweight: 100 !global;
 $bigicon-width: 45px !global;
 $midicon-width: 30px !global;
-$icon-triple: "@3x.png" !global;
 @mixin margin0-padding0 {
   margin: 0;
   padding: 0;
@@ -60,12 +66,6 @@ $icon-triple: "@3x.png" !global;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
-@mixin bgimgsizemid {
-  background-size: $midicon-width;
-  -moz-background-size: $midicon-width;
-}
-
 @mixin textoverflow {
   overflow: hidden;
   white-space: nowrap;
@@ -99,11 +99,6 @@ $icon-triple: "@3x.png" !global;
   background-repeat: no-repeat;
 }
 
-@mixin iconmidbg {
-  background-size: $midicon-width;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
 @mixin btncursor {
   cursor: pointer;
@@ -169,7 +164,193 @@ $icon-triple: "@3x.png" !global;
 .mbottom14{
   margin-bottom: 1rem;
 }
-
-
+.fsize12{
+  font-size:0.85rem ;
+}
+.fsize16{
+  font-size:1.14rem ;
+}
+.fsize18{
+  font-size:1.28rem ;
+}
+.fsize20{
+  font-size:1.43rem ;
+}
+.bold{
+  font-weight: bold;
+}
+/*水平方向左右分布*/
+.flex-lr{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  flex-direction: row;
+}
+.flex-ll{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.flex-rr{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+/*垂直方向居中分布*/
+.flex-vc{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*垂直方向居左分布*/
+.flex-vl{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+}
+/*水平方向居中分布*/
+.flex-cc{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+/*基准线对齐*/
+.flex-bc{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+}
+/*流式布局*/
+.flex-auto{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-flow:wrap;
+}
+.red{
+  color: #F76260;
+}
+.f-liggray{
+  color:#b2b2b2;
+}
+.f-midgray{
+  color:rgba(0,0,0,0.5);
+}
+.f-opamidgray{
+  color:#000;
+  opacity: 0.4;
+}
+.f-darkgray{
+  color:rgba(0,0,0,0.7);
+}
+.bg_blue{
+  background-color: #1273e1;
+}
+.bg-grey {
+  background-color: #f4f4f4;
+}
+.textoverflow{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.textsoverflow{
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+.hr{
+  background: #f3f3f3;
+  border-top: 1px solid #e3e3e3;
+  height: 20rpx;
+  width:auto;
+}
+.hr-one{
+  border-bottom: 2rpx solid rgba(0,0,0,.2);
+}
+.avatar-min,.avatar-min image{width:80rpx;height:80rpx; border-radius: 50%;}
+.avatar,.avatar image{width:128rpx;height:128rpx; border-radius: 50%;}
+.avatar-max,.avatar-max image{width:140rpx;height:140rpx; border-radius: 50%;}
+.item-tag1{
+  color: #35aa7f;
+  border: 1px solid #35aa7f;
+  padding: 0 2px;
+  border-radius: 2px;
+  margin:3px;
+  font-size: 12px;
+}
+.item-tag2{
+  color: #f2bc01;
+  border: 1px solid #f2bc01;
+  padding: 0 2px;
+  border-radius: 2px;
+  margin:3px;
+  font-size: 12px;;
+}
+.item-tag-grayline{
+  color: #999999;
+  border: 2rpx solid #999999;
+  padding: 0 2px;
+  border-radius: 2px;
+  margin:3px;
+  white-space: nowrap;
+  height: 40rpx;
+}
+.btnw90{
+  width: 90%;
+  height: 3rem;
+  line-height: 3rem;
+}
+.btnw50{
+  width: 50%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.btnw45{
+  width: 45%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.btnw20{
+  width: 20%;
+  height: 2rem;
+  line-height: 2rem;
+}
+.group-li{
+  height: 3.8rem;
+}
+.group-lh{
+  width: 25%;
+}
+.group-lb{
+  width: 75%;
+}
+.btncursor {
+  cursor: pointer;
+}
 
 
