@@ -5,6 +5,8 @@ import CitySelect from '@/components/cityselect/cityselect'
 import Service from '@/pages/service/service'
 import SeeHouse from '@/pages/seehouse/seehouse'
 import Me from '@/pages/me/me'
+import Login from '@/pages/login/login'
+import Search from '@/pages/search/search'
 import Oldhouselist from '@/pages/oldhouse/list'
 
 Vue.use(Router)
@@ -29,6 +31,12 @@ export default new Router({
     }, {
       path: '/me',
       component: Me
+    }, {
+      path: '/login',
+      component: Login
+    }, {
+      path: '/search',
+      component: Search
     }, {
       path: '/oldhouselist',
       component: Oldhouselist

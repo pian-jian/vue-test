@@ -2,16 +2,16 @@
   <div>
     <div class="index-banner">
       <router-link  class="btn-location" to="/cityselect">义乌</router-link>
-      <div class="userinfo f10 white">
+      <router-link class="userinfo f10 white" to="/login">
         <span class="user-icon"></span>
         登录/注册
-      </div>
+      </router-link>
       <div class="bfbzfy">
       </div>
-      <div class="index-search">
+      <router-link class="index-search" to="/search">
         <span class="icon-home-search"></span>
         <input type="text" class="" placeholder="请输入城区、商圈或学区房名...">
-      </div>
+      </router-link>
     </div>
     <div class="index-types">
       <div class="bgs-list row">
@@ -95,18 +95,19 @@
     </div>
     <div class="hr-one"></div>
     <Esflist></Esflist>
-
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 <script>
   import indexswiper from '../swiper/swiper'
   import esflist from './../../components/houselist/esfitem'
+  import footer from './../../components/footer/footer'
 
   export default {
-
     components: {
       'IndexSwiper': indexswiper,
-      'Esflist': esflist
+      'Esflist': esflist,
+      'SiteFooter': footer
     }
   }
 </script>
