@@ -9,6 +9,7 @@ import Login from '@/pages/login/login'
 import Regist from '@/pages/regist/regist'
 import Search from '@/pages/search/search'
 import Oldhouselist from '@/pages/oldhouse/list'
+import Oldhouseshow from '@/pages/oldhouse/show'
 
 Vue.use(Router)
 
@@ -44,5 +45,8 @@ export default new Router({
     }, {
       path: '/oldhouselist',
       component: Oldhouselist
+    }, {
+      path: '/oldhouse-show',
+      component: Oldhouseshow
     }]
 })

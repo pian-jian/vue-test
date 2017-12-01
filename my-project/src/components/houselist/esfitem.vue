@@ -5,7 +5,7 @@
       infinite-scroll-disabled="loading"
       infinite-scroll-distance="10">
       <li v-for="item in list" @click="itemClick(id = item)">
-        <div class="group-list flex-lr section mtop14 mbottom14">
+        <router-link class="group-list flex-lr section mtop14 mbottom14" to="/oldhouse-show">
           <div class="group-lh">
             <div class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
               <text class="esf-tag fsize12">优选</text>
@@ -27,7 +27,7 @@
               <div class="item-tag2">满两年12</div>
             </div>
           </div>
-        </div>
+        </router-link>
         <div class="hr-one"></div>
       </li>
     </ul>

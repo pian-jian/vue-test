@@ -52,6 +52,7 @@
       height: 100%;
       float: left;
       line-height: 6rem;
+      text-align: center;
     }
     @for $i from 1 through 4{
       .footer-icon-0#{$i}{

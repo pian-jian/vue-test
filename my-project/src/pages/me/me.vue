@@ -2,8 +2,8 @@
   <div class="page-me">
     <div class="banner bgimg-cover flex-bottom">
       <div class="flex-cc section optbtns">
-        <router-link class="whitelinebtn btnw20" to="/login">登录</router-link>
-        <router-link class="whitelinebtn btnw20 mleft14" to="/regist">注册</router-link>
+        <router-link class="whitelinebtn btnw20 flex-vc" to="/login">登录</router-link>
+        <router-link class="whitelinebtn btnw20 flex-vc mleft14" to="/regist">注册</router-link>
       </div>
     </div>
     <div class="con-list">

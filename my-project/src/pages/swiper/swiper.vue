@@ -1,8 +1,9 @@
 <template>
   <div class="index-swiper">
     <mt-swipe  :auto="4000" direction="vertical">
-      <mt-swipe-item><img src="../../assets/imgs/home_banner1.jpg"/></mt-swipe-item>
-      <mt-swipe-item><img src="../../assets/imgs/home_banner2.jpg"/></mt-swipe-item>
+      <mt-swipe-item v-for="item in swiperdata">
+        <img src="item.img"/>
+      </mt-swipe-item>
     </mt-swipe>
   </div>
 </template>
