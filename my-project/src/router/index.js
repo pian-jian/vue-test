@@ -6,6 +6,7 @@ import Service from '@/pages/service/service'
 import SeeHouse from '@/pages/seehouse/seehouse'
 import Me from '@/pages/me/me'
 import Login from '@/pages/login/login'
+import Regist from '@/pages/regist/regist'
 import Search from '@/pages/search/search'
 import Oldhouselist from '@/pages/oldhouse/list'
 
@@ -31,6 +32,9 @@ export default new Router({
     }, {
       path: '/me',
       component: Me
+    }, {
+      path: '/regist',
+      component: Regist
     }, {
       path: '/login',
       component: Login
