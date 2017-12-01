@@ -4,7 +4,7 @@
       v-infinite-scroll="loadMore"
       infinite-scroll-disabled="loading"
       infinite-scroll-distance="10">
-      <li v-for="item in list">
+      <li v-for="item in list" @click="itemClick(id = item)">
         <div class="group-list flex-lr section mtop14 mbottom14">
           <div class="group-lh">
             <div class="thumb" style="background-image: url('http://apmcdn.eallcn.com/app_yun/2017-02/D19/5197/fyimg/1487467906404.jpg')">
@@ -37,7 +37,7 @@
   export default {
     data () {
       return {
-        list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+        list: ['1_01', '2_01', '3_01', '4_01', '5_01', '6_01', '7_01', '8_01', '9_01', '10_01', '11_01', '12_01', '13_01']
       }
     },
     methods: {
@@ -47,10 +47,13 @@
         setTimeout(() => {
           let last = this.list[this.list.length - 1]
           for (let i = 1; i <= 10; i++) {
-            this.list.push(last + i)
+            this.list.push(last + i + '_01')
           }
           this.loading = false
         }, 2500)
+      },
+      itemClick () {
+        console.log(this.id)
       }
     }
   }
